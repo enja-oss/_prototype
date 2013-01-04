@@ -1,0 +1,116 @@
+/* ==========================================================================
+primary: Yuya Saito @ http://twitter.com/cssradar
+============================================================================= */
+
+// Common
+html
+  background url(t-subtle_dots) repeat 0 0
+  color #4d4d4c
+
+.unit-inner
+  column(3)
+  margin 0 auto
+
+.en
+  font-family 'Open Sans', sans-serif
+
+.icon-logo:after
+  color #fafafa
+  font-size 2.25em
+  font-family 'nounproject'
+  content "\e000"
+  display inline-block
+  position relative
+  top -38px
+
+.unit.pad
+  max-height 482px
+  min-height 482px
+  box-sizing border-box
+
+// Module Specific
+
+// header
+.the-header
+  color #fafafa
+  padding-top 190px
+  background url(t-navy_blue) repeat 0 0
+  .hgroup
+    width 60%
+    float left
+  h1, h2
+    line-height 1.2
+    margin-bottom 0
+  h1
+    font-weight 800
+  h2
+    font-weight 400
+
+.logo
+  width 40%
+  float right
+  clear right
+  text-align right
+
+// navigation
+.navgation
+  ul
+    padding-top 58px
+    margin-bottom 0
+    li
+      font-weight 800
+      margin-bottom 0
+      line-height 1
+      a:link, a:visited
+        color #BFC0BE
+      a:hover
+        color #4d4d4c
+
+// philosophy
+.philosophy
+  h2
+    padding-top 58px
+    margin-bottom 56px
+  p
+    padding-bottom 58px
+    margin-bottom 0
+
+// projects
+.projects
+  h2
+    padding-top 58px
+    margin-bottom 56px
+
+// people
+.people
+  h2
+    padding-top 58px
+    margin-bottom 56px
+
+// joinus
+.joinus
+  h2
+    padding-top 58px
+    margin-bottom 56px
+
+// mediakit
+.mediakit
+  h2
+    padding-top 58px
+    margin-bottom 56px
+
+
+/* ==========================================================================
+media queries
+============================================================================= */
+@media screen and (min-width: 480px)
+  .unit-inner
+    column(5)
+
+@media screen and (min-width: 600px)
+  .unit-inner
+    column(6)
+
+@media screen and (min-width: 768px)
+  .unit-inner
+    column(10)
