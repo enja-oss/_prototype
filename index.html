@@ -3,6 +3,7 @@
   <head>
     <title>en.ja OSS</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/nivo-slider.min.css">
     <link rel="stylesheet" href="./assets/styles/master.css">
   </head>
 </html>
@@ -11,8 +12,8 @@
     <header class="the-header unit pad cf">
       <div class="unit-inner">
         <div class="hgroup">
-          <h1 class="en">en.ja OSS</h1>
-          <h2 class="en h6">Bringing down the language barriers</h2>
+          <h1 class="en main">en.ja OSS</h1>
+          <h2 class="en h6 sub">Bringing down the language barriers</h2>
         </div>
         <div class="logo"><span class="icon-logo"></span></div>
       </div>
@@ -21,10 +22,10 @@
       <div class="unit-inner">
         <div class="bd">
           <ul class="list-none">
-            <li class="en h1"><a href="#philosophy">Philosophy</a></li>
-            <li class="en h1"><a href="#projects">Projects</a></li>
-            <li class="en h1"><a href="#people">People</a></li>
-            <li class="en h1"><a href="#joinus">Join Us</a></li>
+            <li class="en h3 main"><a href="#philosophy">Philosophy</a></li>
+            <li class="en h3 main"><a href="#projects">Projects</a></li>
+            <li class="en h3 main"><a href="#people">People</a></li>
+            <li class="en h3 main"><a href="#joinus">Join Us</a></li>
           </ul>
         </div>
       </div>
@@ -39,26 +40,31 @@
         </div>
       </div>
     </div>
-    <div class="unit projects">
+    <div class="unit projects featured">
       <div class="unit-inner">
         <div class="hd">
-          <h2 id="projects" class="en h3">Projects</h2>
+          <h2 id="projects" class="en main h2">Featured Projects</h2>
+        </div>
+        <div class="bd">
+          <div class="slider-wrapper">
+            <div id="slider" class="nivoSlider"><a href="https://github.com/enja-oss/Backbone" title="backbone.js"><img src="assets/images/repositories/backbone.001.png" alt="backbone.js"></a><a href="https://github.com/enja-oss/Underscore" title="underscore.js"><img src="assets/images/repositories/underscore.002.png" alt="underscore.js"></a><a href="https://github.com/enja-oss/Sass" title="Sass"><img src="assets/images/repositories/sass.003.png" alt="Sass"></a><a href="https://github.com/enja-oss/stylus" title="Stylus"><img src="assets/images/repositories/stylus.004.png" alt="Stylus"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="unit projects list">
+      <div class="unit-inner">
+        <div class="hd">
+          <h2 id="projects" class="en main h2">All Projects</h2>
         </div>
         <div class="bd">
           <ul class="list-none">
-            <li><a href="https://github.com/enja-oss/Backbone" title="backbone.js"><img src="assets/images/repositories/backbone.001.png" alt="backbone.js"></a></li>
-            <li><a href="https://github.com/enja-oss/Underscore" title="underscore.js"><img src="assets/images/repositories/underscore.002.png" alt="underscore.js"></a></li>
-            <li><a href="https://github.com/enja-oss/Sass" title="Sass"><img src="assets/images/repositories/sass.003.png" alt="Sass"></a></li>
-            <li><a href="https://github.com/enja-oss/stylus" title="Stylus"><img src="assets/images/repositories/stylus.004.png" alt="Stylus"></a></li>
-            <li><a href="https://github.com/enja-oss/CSSO" title="CSSO"><p>CSSO</p>
-</a></li>
-            <li><a href="https://github.com/enja-oss/emberjs-doc-translation" title="emberjs-doc-translation"><p>emberjs-doc-translation</p>
-</a></li>
-            <li><a href="https://github.com/enja-oss/idiomatic-css" title="idiomatic-css"><p>idiomatic-css</p>
-</a></li>
-            <li><a href="https://github.com/enja-oss/ja-lesscss-org" title="ja-lesscss-org"><p>ja-lesscss-org
-</p>
-</a></li>
+            <li><a href="https://github.com/enja-oss/Backbone" title="backbone.js">Backbone.js</a></li>
+            <li><a href="https://github.com/enja-oss/Underscore" title="underscore.js">Underscore.js</a></li>
+            <li><a href="https://github.com/enja-oss/Sass" title="Sass">Sass</a></li>
+            <li><a href="https://github.com/enja-oss/stylus" title="Stylus">Stylus</a></li>
+            <li><a href="https://github.com/enja-oss/nib" title="nib">nib</a></li>
+            <li><a href="https://github.com/enja-oss/CSSO" title="CSSO">CSSO</a></li>
           </ul>
         </div>
       </div>
@@ -66,7 +72,7 @@
     <div class="unit people">
       <div class="unit-inner">
         <div class="hd">
-          <h2 id="people" class="en h3">People</h2>
+          <h2 id="people" class="en main h2">People</h2>
         </div>
         <div class="bd">
           <ul class="list-none">
@@ -97,24 +103,26 @@
     <div class="unit joinus">
       <div class="unit-inner">
         <div class="hd">
-          <h2 id="joinus" class="en h3">Join Us!</h2>
+          <h2 id="joinus" class="en main h3">Join Us!</h2>
         </div>
         <div class="bd"><p>enja-ossでは翻訳参加者を募集しています。参加方法等、詳しくはenja-oss/READMEを参照して下さい。</p>
 <a href="https://github.com/enja-oss/README"><p>enja-oss/README</p>
-</a><a href="https://gist.github.com/4466335"><p>en.ja OSSについて(by @studiomohawk)
-</p>
+</a><a href="https://gist.github.com/4466335"><p>en.ja OSSについて(by @studiomohawk)</p>
 </a>
         </div>
       </div>
     </div>
-    <div class="unit mediakit">
+    <div class="unit mediakit is-hidden">
       <div class="unit-inner">
         <div class="hd">
-          <h2 class="en h3">Media kit</h2>
+          <h2 class="en main h3">Media kit</h2>
         </div>
         <div class="bd"></div>
       </div>
     </div>
   </div>
 </body>
-<script src="./node_modules/Holder/holder.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-nivoslider/3.2/jquery.nivo.slider.pack.min.js"></script>
+<script src="./assets/scripts/script.js"></script>
+<!-- script(src='./node_modules/Holder/holder.js')-->

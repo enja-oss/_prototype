@@ -17,10 +17,14 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         options: {
-          pretty: true
+          pretty: true,
+          data: {
+            debug: false,
+            data: '<json:data.json>'
+          }
         },
         files: {
-          "index.html": ["index.jade"]
+          './index.html': ['./index.jade']
         }
       }
     },
@@ -28,7 +32,8 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8000,
-          base: '.'
+          base: '.',
+          keepalive: true
         }
       }
     },
@@ -41,15 +46,22 @@ module.exports = function(grunt) {
         files: ['index.jade', 'includes/**/*.jade'],
         tasks: ['jade']
       }
+    },
+    parallel: {
+      assets: {
+        grunt: true,
+        tasks: ['watch:css', 'watch:html', 'connect']
+      }
     }
   });
 
   // Load plugin
-  grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-parallel');
 
   // Default task
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['parallel']);
 };
