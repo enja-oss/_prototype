@@ -2069,7 +2069,7 @@ table.CodeRay td {
   color: #ae81ff;
 }
 html {
-  background: url("/assets/images/textures/subtle_dots.png") repeat 0 0;
+  background: url("../images/textures/subtle_dots.png") repeat 0 0;
   color: #4d4d4c;
 }
 .unit-inner {
@@ -2102,7 +2102,7 @@ html {
 .the-header {
   color: #fafafa;
   padding-top: 190px;
-  background: url("/assets/images/textures/navy_blue.png") repeat 0 0;
+  background: url("../images/textures/navy_blue.png") repeat 0 0;
 }
 .the-header .hgroup {
   width: 60%;
